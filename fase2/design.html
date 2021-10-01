@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Flexbox, Listas y enlaces</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style type="text/css">
+                    #nav {
+                        position: relative;
+                    }
+                    #nav li {
+                        list-style:none;
+                        float: left;
+                    }
+                    #nav li a {
+                        display: block;
+                        padding: 8px 12px;
+                        text-decoration: none;
+                    }
+                    #nav li a:hover {
+                        background-color:rgb(106, 114, 223);
+                        color:#FFF;
+                        opacity:1;
+                    }
+                    #nav {
+                        top: 60px;
+                        min-width: 850px;
+                        background: #fff;
+                        height: 34px;
+                        z-index: 100;
+                        display: flex;
+                        justify-content: center;
+                        margin-left: -39px !important;
+                    }
+                    #nav li ul {
+                        color: #333;
+                        display: none;
+                        position: absolute; 
+                        width:850px;
+                    }
+                    #nav li ul li {
+                        display: inline;
+                    }
+                    #nav li ul li a {
+                        background: #fff;
+                        border: none;
+                        line-height: 34px;
+                        margin: 0;
+                        padding: 0 8px 0 10px;
+                    }
+                    #nav li ul li a:hover {
+                        background-color:red;
+                        color:#FFF;
+                        opacity:1;
+                    }
+
+
+                    #nav li ul li ul{
+                        top: 0;
+                    }
+                    ul.child {
+                    background-color:#FFF;  
+                    }
+
+                    #nav li.current > a {
+                        background: #f7f7f7;
+                        float:left;
+                    }
+
+                    #nav li:hover > ul.child {
+                        left: 0;
+                        top: 34px;
+                        display: flex;
+                        justify-content: center;
+                        text-align: left;
+                        margin-left: 84px;
+                    }
+                    #nav li:hover > ul.grandchild  {
+                        display:block;
+                    }
+                    .txt {
+                        margin-top: 130px;
+                        margin-left: 100px;
+                        margin-right: 100px;
+                        text-align: justify;
+                    }   
+                    h2.art_flex {
+                        text-align: center;
+                    }      
+                    h3.art_flex {
+                        text-align: center;
+                    } 
+                    footer {
+                        margin-top: 70px;
+                        border-top: 2px solid;
+                    }
+        </style>
+    </head>
+    <body>
+      <header>
+          <h1><center>Flexbox, Listas y enlaces</center></h1>
+      </header>
+      <center><ul id="nav">
+        <li><a href="#">Inicio</a></li>
+        <li>
+            <a href="#">Temas</a>
+            <ul class="child">
+                <li><a href="#">Tema 1</a></li>
+                <li><a href="#">Tema 2</a></li>   
+            </ul>
+        </li>
+        <li>
+            <a href="#">Recursos Digitales</a>
+            <ul class="child">
+                <li><a href="#">Recurso 1</a></li>
+                <li><a href="#">Recurso 2</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#">Aprendizaje</a>
+            <ul class="child">
+                <li><a href="#">Actividad 1</a></li>
+                <li><a href="#">Actividad 2</a></li>   
+            </ul>
+        </li>
+        <li><a href="#">Acerca de</a>
+        <ul class="child">
+            <li><a href="#">Autor</a></li> 
+        </ul>
+        </li>
+    </ul>
+    </center>
+
+    <section>
+
+        <div class="txt">
+
+            <h3 class="art_flex">Propósito del sitio</h3>
+    
+                <p class="art_flex_txt">
+                    El sitio tiene como proposito, documentar los conceptos respectivos al módulo de caja flexible "Flexbox", sus características y herramientas, indispensables para un diseño adaptable para páginas web.
+                </p>
+    
+            </div>
+
+    </section>
+
+    <article>
+
+        <div class="txt">
+
+        <h2 class="art_flex">Conceptos Básicos de Flexbox</h2>
+
+            <p class="art_flex_txt">
+                El módulo flexbox, generalmente llamado flexbox, está diseñado como un modelo de diseño unidimensional, que es un método que puede ayudar a asignar espacio entre elementos en la interfaz y mejorar las capacidades de alineación. Este artículo revisa las características principales de flexbox, que exploraremos con más detalle en el resto de estas guías.
+
+                Cuando describimos flexbox como unidimensional, enfatizamos el hecho de que flexbox solo se ocupa del diseño unidimensional a la vez, ya sea como una fila o como una columna. Esto contrasta con el modelo bidimensional de CSS Grid Layout, que maneja tanto columnas como filas.
+                
+                (Conceptos Básicos de Flexbox - CSS | MDN, 2021)
+            </p>
+
+        </div>
+
+        <div class="txt">
+
+            <h2 class="art_flex">Referencias</h2>
+    
+                <p class="art_flex_txt">
+                    Conceptos Básicos de flexbox - CSS | MDN. (2021, 30 septiembre). MDN WebDocs Mozilla. <a href="https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox">https://developer.mozilla.org/es/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox</a>
+                </p>
+    
+            </div>
+
+    </article>
+
+    </body>
+
+    <footer>
+        <p><center><b>Brayan Ernesto Forero Prieto</b></center></p>
+        <p><center>Ingeniería de Sistemas</center></p>
+        <p><center><b>Correo UNAD</b> <a href="mailto:beforerop@unadvirtual.edu.co">beforerop@unadvirtual.edu.co</a></center></p>
+        <p><center><b>Correo Personal</b> <a href="mailto:forerobrayan94@gmail.com">forerobrayan94@gmail.com</a></center></p>
+        <p><center><b>Skype</b> <a>bryan10221994@hotmail.com</a></center></p>
+    </footer>
+
+</html>
