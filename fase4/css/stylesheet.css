@@ -1,0 +1,39 @@
+
+img.logo_a {
+    width: 40%;
+    display: block;
+    margin: auto;
+}
+
+header.container-fluid {
+    background-color: #193498;
+}
+
+nav.navbar.navbar-expand-lg.navbar-dark {
+    background-color: #113CFC;
+}
+
+.col-md-8 {
+    text-align: center;
+}
+
+aside.col-md-4 {
+    text-align: center;
+}
+
+h5.h5_a {
+    color: #fff;
+    margin-top: 35px;
+    text-align: center;
+}
+
+footer {
+    padding-bottom: 10px;
+    background-color: #193498;
+    color: #fff;
+    padding-top: 10px;
+}
+
+footer img{
+    margin-top: 3px;
+}
